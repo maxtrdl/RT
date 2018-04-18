@@ -1,0 +1,49 @@
+How to use RT :
+
+First five lines are mandatory.
+Camera orientation is expressed in degres.
+Intensity applies to all lights and must be comprised between 0 and 1.
+All shape normals must be comprised between -1 and 1. If normal values are incoherent, render is undefined.
+Ambient light must be set on line 6.
+Shape colors (r, g, b) must be comprised between 0 and 1.
+If shape height is set to 0, shape will be infinite.
+Shape radius must be above 0.
+Number of lights and shapes are not limited.
+
+scene_name=[name]
+camera=[posX, posY, posZ, orientationX, orientationY, orientationZ]
+intensity=[value]
+shadow=[yes/no]
+shine=[yes/no]
+ambient_light=[posX, posY, posZ, normalX, normalY, normalZ, r, g, b]
+light=[posX, posY, posZ, normalX, normalY, normalZ, r, g, b]
+plane=[posX, posY, posZ, normalX, normalY, normalZ, r, g, b]
+sphere=[posX, posY, posZ, radius, r, g, b]
+cylinder=[posX, posY, posZ, normalX, normalY, normalZ, radius, height, r, g, b]
+cone=[posX, posY, posZ, normalX, normalY, normalZ, radius, height, r, g, b]
+hyperboloid=[posX, posY, posZ, normalX, normalY, normalZ, radius, r, g, b]
+
+Left clic to select to shape you want to modify, right clic to unselect.
+
+Keys :
+-Enter RT: space
+-Exit RT: esc
+-Remove form: delete
+-Change mode (edit / diffuse / reflection): L
+-Move camera:
+	rotation: arrows + n + m
+	position: w / s / a / d / z / x
+-Move shape:
+	rotation: use interface or 7 / 8 / 4 / 5 / 1 / 2
+	position: t / g / f / h / scroll mouse
+	radius: + / -
+-Export:
+	file: c
+	image: return
+-Lights:
+	select light: 1 / 2
+	to move lights use same keys as shapes
+-Options:
+	antialiasing: u
+	reflection coeficient: r
+

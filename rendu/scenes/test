@@ -1,0 +1,7 @@
+scene_name=[test]
+camera=[0, 0, 0, 0, 0, 0]
+intensity=[0.5]
+shadow=[yes]
+shine=[yes]
+ambient_light=[0, 10, 5, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0]
+plane=[0, -5.0, 0.0, 0.0, 1.0, 0.0, 0.9, 0.9, 1.0]
